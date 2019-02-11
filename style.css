@@ -1,3 +1,5 @@
+/* Add a reset stylesheet for better formatting in different viewing options */
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -101,7 +103,8 @@ input, select {
     vertical-align:middle;
 }
 
-/* my code */
+/* Andres hernandez
+   Last Updated: February 10, 2019 */
 * {
   text-decoration: none;
 }
@@ -110,22 +113,22 @@ main {
   padding-top: 100px;
 }
 
+/* main header/banner will stay in place while scrolling */
 header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-
-  background-color: white;
+  background-color: #111;
   width: 100%;
   height: 100px;
 }
 
-header .header-brand {
+header .logo {
   font-family: Catamaran;
   font-size: 24px;
   font-weight: 900;
-  color: #111;
+  color: white;
   text-transform: uppercase;
   display: block;
   margin: 0 auto;
@@ -149,21 +152,23 @@ header nav ul li {
 header nav ul li a {
   font-family: Catamaran;
   font-size: 16px;
-  color: #111;
+  color: white;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 header .header-laugh {
   display: none;
 }
 
-@media only screen and (min-width: 1000px) { /* convert to desktop mode */
-  header .header-brand {
+/* convert to desktop mode */
+@media only screen and (min-width: 1000px) {
+  header .logo {
     margin: 31px 0;
     text-align: left;
     line-height: 40px;
     padding: 0 20px 0 40px;
-    border-right: 3px solid #111;
+    border-right: 3px solid white;
     float: left;
   }
 
@@ -180,18 +185,23 @@ header .header-laugh {
     display: block;
     font-family: Catamaran;
     font-size: 16px;
-    color: #111;
+    color: white;
     text-transform: uppercase;
     line-height: 40px;
-    border: 1px solid #111;
+    border: 1px solid white;
     float: right;
     margin-right: 40px;
     margin-top: 30px;
     padding: 0 20px;
   }
+
+  header .header-laugh:hover {
+    background-color: lightpink;
+    transition: all 0.5s ease-in;
+  }
 } /* end media */
 
-/* index */
+/* INDEX/HOME */
 .index-banner {
   width: 100%;
   height: calc(100vh - 100px); /* remove bottom part of background */
@@ -202,7 +212,7 @@ header .header-laugh {
   display: table;
 }
 
-.vertical-center {
+.vertical-index {
   display: table-cell;
   vertical-align: middle;
 }
@@ -218,7 +228,7 @@ header .header-laugh {
 }
 
 .index-banner h1 {
-  font-family: Cormorant Garamond;
+  font-family: Cormorant Garamond; /* from font library */
   font-size: 28px;
   font-weight: 100;
   font-style: italic;
@@ -226,6 +236,12 @@ header .header-laugh {
   color: white;
   text-align: center;
   text-shadow: 2px 2px 8px #111; /* blur and give a shadow */
+}
+
+/* when mouse hovers, change color */
+.index-links div:hover {
+  background-color: lightblue;
+  transition: all 0.5s ease-in;
 }
 
 .index-links div {
@@ -242,9 +258,11 @@ header .header-laugh {
   line-height: 100px;
   color: #111;
   text-align: center;
+
 }
 
-@media only screen and (min-width: 1000px) { /* convert to desktop mode */
+/* convert to desktop mode */
+@media only screen and (min-width: 1000px) {
   .wrapper {
     width: 1400px;
     margin: 0 auto;
@@ -272,7 +290,7 @@ header .header-laugh {
   }
 
   .index-boxlink-1 {
-    width: calc(50% - 20px) !important;
+    width: calc(50% - 20px) !important; /* prioritize this command */
   }
 
   .index-boxlink-2 {
@@ -321,7 +339,7 @@ header .header-laugh {
   font-size: 24px;
   text-align: left;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .contact-info p {
@@ -330,7 +348,8 @@ header .header-laugh {
   margin-left: 20px;
 }
 
-@media only screen and (min-width: 1000px) { /* convert to desktop mode */
+/* convert to desktop mode */
+@media only screen and (min-width: 1000px) {
   .wrapper {
     width: 1400px;
     margin: 0 auto;
@@ -341,13 +360,53 @@ header .header-laugh {
     }
 }
 /* ABOUT ME */
+.about-banner {
+  width: 100%;
+  height: calc(100vh - 100px); /* remove bottom part of background */
+  background-image: url('images/setup.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-about {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.about-banner h2 {
+  font-family: Catamaran;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: white;
+  text-align: center;
+  text-shadow: 4px 4px 8px black; /* blur and give a shadow */
+}
+
+/* convert to desktop mode */
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1400px;
+    margin: 0 auto;
+  }
+    .about-banner {
+      width: 100%;
+      height: 450px; /* remove bottom part of background */
+    }
+}
+
 .about-1 {
   overflow: hidden;
 }
 
 .about-1 h2 {
+font-family: Catamaran;
 text-align: center;
 font-size: 24px;
+margin-top: 30px;
+text-transform: uppercase;
 }
 
 .about-1 img {
@@ -356,6 +415,7 @@ font-size: 24px;
   width: 25%;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .about-1 p {
@@ -366,9 +426,11 @@ font-size: 24px;
 }
 
 .about-2 h2 {
-  margin-top: 10px;
+  font-family: Catamaran;
   text-align: center;
   font-size: 24px;
+  margin-top: 30px;
+  text-transform: uppercase;
 }
 
 .column {
@@ -427,12 +489,12 @@ footer ul li a{
   margin-bottom: 10px;
 }
 
+/* convert to desktop mode */
 @media only screen and (min-width: 1000px) {
-
-footer ul {
-  width: fit-content;
-  float: left;
-  padding-left: 20px;
-  padding-right: 30px;
-}
+  footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
 } /* end media */
