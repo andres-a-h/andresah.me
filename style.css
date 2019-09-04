@@ -348,6 +348,28 @@ header .header-laugh {
   margin-left: 20px;
 }
 
+/* convert to desktop mode */
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 1400px;
+    margin: 0 auto;
+  }
+    .contact-banner {
+      width: 100%;
+      height: 450px; /* remove bottom part of background */
+    }
+}
+
+/* PROJECTS INFO */
+.projects-banner {
+  width: 100%;
+  height: calc(100vh - 100px); /* remove bottom part of background */
+  background-image: url('images/projectsbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
 .vertical-projects {
   display: table-cell;
   vertical-align: middle;
@@ -377,7 +399,7 @@ header .header-laugh {
     width: 1400px;
     margin: 0 auto;
   }
-    .contact-banner {
+    .projects-banner {
       width: 100%;
       height: 450px; /* remove bottom part of background */
     }
