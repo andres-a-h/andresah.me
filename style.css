@@ -363,7 +363,7 @@ header .header-laugh {
 .about-banner {
   width: 100%;
   height: calc(100vh - 100px); /* remove bottom part of background */
-  background-image: url('images/setup.jpg');
+  background-image: url('images/aboutbg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
