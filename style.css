@@ -205,7 +205,7 @@ header .header-laugh {
 .index-banner {
   width: 100%;
   height: calc(100vh - 100px); /* remove bottom part of background */
-  background-image: url('images/palmtrees.jpg');
+  background-image: url('images/contacts.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
