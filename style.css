@@ -464,10 +464,10 @@ text-transform: uppercase;
 }
 
 .about-1 p {
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 10px;
   margin-left: 20px;
-  text-indent: 10px;
+  text-indent: 20px;
 }
 
 .about-2 h2 {
@@ -491,10 +491,10 @@ text-transform: uppercase;
 }
 
 .about-2 p {
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 10px;
   margin-left: 20px;
-  text-indent: 10px;
+  text-indent: 20px;
 }
 
 /* footer */
