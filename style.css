@@ -348,6 +348,29 @@ header .header-laugh {
   margin-left: 20px;
 }
 
+.vertical-projects {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.projects-banner h2 {
+  font-family: Catamaran;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px black; /* blur and give a shadow */
+}
+
+.projects-info h2
+{
+  font-family: Catamaran;
+  font-size: 24px;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
 /* convert to desktop mode */
 @media only screen and (min-width: 1000px) {
   .wrapper {
